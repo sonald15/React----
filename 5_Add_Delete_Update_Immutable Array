@@ -1,0 +1,24 @@
+const newBook = {
+  id: 6,
+  titile: " Alibaba Chalis Chor",
+  author: "abc",
+};
+
+const booksAfterAdd = [...books, newBook];
+booksAfterAdd;
+
+// Deleting the Object from the object Array
+
+const booksAfterDelete = booksAfterAdd.filter((books) => books.id !== 3);
+booksAfterDelete;
+
+// Updating Object in Array of Objects
+
+const booksAfterUpdate = booksAfterDelete.map((books) =>
+  books.id === 1 ? {} : books
+);
+booksAfterUpdate;
+
+
+
+
