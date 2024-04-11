@@ -182,3 +182,18 @@ shortBook;
 const adventureBooks = books.filter((books) =>
   books.genres.includes("adventure")
 );
+
+
+
+// Reduce Method
+// we want to read all books in a array
+// Reduce() function gives two argumentas,
+// first is call back function
+// second id initial value
+
+
+const allBooksPages = books.reduce((acc, books) => acc + books.pages, 0); //acc acumulate teh result of the function and gives it to reduce function
+allBooksPages;
+
+const totalPagesOfBooks = books.reduce((acc, books) => acc + books.pages, 0);
+totalPagesOfBooks;
