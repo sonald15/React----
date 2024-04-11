@@ -1,0 +1,33 @@
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 3, 67, 4, 5, 6, 6, 7, 869];
+
+// let [a, b, c] = arr; // first three values of arr will be asigned
+let [e, , , , f, ...rest] = arr;
+// //let [z, y, x, ...rest] = arr;
+//console.log(e, f, rest);
+let { a, b } = { a: 12, b: 65 };
+
+console.log(a, b, rest);
+//--------------------------------------------------------------
+// Spread Operator
+
+let arr1 = [3, 5, 8];
+
+let obj1 = { ...arr1 };
+console.log(obj1);
+
+function sum(v1, v2, v3) {
+  return v1 + v2 + v3;
+}
+
+console.log(sum(...arr1));
+
+let obj2 = {
+  name: "hary",
+  comapny: "abc",
+  address: "xyz",
+};
+// name will be override
+console.log({ ...obj2, name: "sonal" });
+
+// this will not override
+console.log({ ...obj2, name: "kiya", comapny: "opl" });
