@@ -1,0 +1,15 @@
+// Sorting function
+// if a - b is (-ve) then small first and bigger value second
+// if a - b is (+ve) then it interchanges the position
+const arr = [3, 6, 4, 8, 6, 9, 1];
+const sorted_arr = arr.sort((a, b) => a - b); // it sorts the array in ascending order
+sorted_arr;
+
+const sorted_arr2 = arr.slice().sort((a, b) => a - b); // it sorts the copy of arr array not the original one 
+sorted_arr2;
+arr
+
+
+// Sorting the books by its number of pages
+const sortedBooks = books.slice().sort((a, b) => b.pages - a.pages);
+sortedBooks;
