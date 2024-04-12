@@ -28,3 +28,12 @@ function Pizza(props) {
     </div>
   );
 }
+
+
+
+
+4) importing react in index.js
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
